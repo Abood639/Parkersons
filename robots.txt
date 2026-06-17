@@ -1,0 +1,25 @@
+# robots.txt for Parkersons Heating and Air
+# Optimized for search engine indexability and selective AI crawler training prevention
+
+# Block aggressive AI model training crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Allow search crawlers and real-time browsing AI crawlers (ChatGPT-User, OAI-SearchBot, PerplexityBot)
+User-agent: *
+Allow: /
+
+# Reference the XML Sitemap
+Sitemap: https://parkersonshvac.com/sitemap.xml

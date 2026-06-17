@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.add('js')</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HVAC Replacement | Parkersons Heating and Air</title>
+  <meta name="description" content="Calculate your heating and cooling installation costs with Parkersons Heating and Air. Customize size, system type, efficiency, and add-ons for an instant estimate.">
+  <link rel="canonical" href="https://parkersonsheatingandair.com/replacement.html">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" type="image/svg+xml" href="assets/favicon.svg">
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://parkersonsheatingandair.com/#localbusiness",
+      "name": "Parkersons Heating and Air",
+      "image": "https://parkersonsheatingandair.com/assets/hvac_banner.png",
+      "url": "https://parkersonsheatingandair.com/",
+      "telephone": "+1-813-359-3020",
+      "email": "info@parkersonsheatingandair.com",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Serving Brandon & Surrounding Areas",
+        "addressLocality": "Brandon",
+        "addressRegion": "FL",
+        "postalCode": "33511",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 27.9378,
+        "longitude": -82.2859
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Brandon Metro Area"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "HVAC Upgrades & Installation",
+      "provider": {
+        "@id": "https://parkersonsheatingandair.com/#localbusiness"
+      },
+      "description": "High-efficiency heating & cooling installations. Upgrade old, high-bill systems with modern comfort solutions and 10-year parts warranty.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Brandon Metro Area"
+      }
+    }
+  ]
+  </script>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <nav class="top-nav" aria-label="Main Navigation">
+    <div class="container nav-container">
+      <a href="index.html?v=3" class="logo" aria-label="Parkersons Heating and Air Home">
+        <img src="assets/logo.svg" alt="Parkerson's Heating & Air Logo" style="height: 48px; display: block;">
+      </a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-list">
+        ☰
+      </button>
+      <ul class="nav-links" id="nav-list">
+        <li><a href="index.html?v=3">Home</a></li>
+        <li><a href="repairs.html?v=3">Repairs &amp; Duct Work</a></li>
+        <li><a href="replacement.html?v=3" class="active">Replacement</a></li>
+        <li><a href="maintenance.html?v=3">Maintenance Plans</a></li>
+        <li><a href="service-areas.html?v=3">Service Areas</a></li>
+        <li><a href="team.html?v=3">Our Team</a></li>
+        <li><a href="blog.html?v=3">Blog</a></li>
+        <li><a href="faq.html?v=3">FAQ</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="replacement.html?v=3" class="btn btn-secondary">Price Calculator</a>
+        <a href="contact.html?v=3" class="btn btn-primary">Schedule Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="section hero" aria-label="Replacement Services Introduction">
+    <div class="container grid-2" style="align-items: center;">
+      <div class="hero-content animate-on-scroll">
+        <span class="hero-subtitle">New HVAC Installation. Change Outs. Lasting Comfort with Confidence.</span>
+        <h1>High-efficiency heating &amp; cooling installations.</h1>
+        <p class="hero-descr">When your heating and cooling system is no longer keeping up, it may be time for a replacement. At Parkerson's Heating and Air, we specialize in professional HVAC replacement and new unit installations designed to improve comfort, efficiency, and long-term reliability.</p>
+        <div class="hero-actions">
+          <a href="#calculator" class="btn btn-primary">HVAC Cost Calculator</a>
+          <a href="#evaluation" class="btn btn-secondary">Replacement Guide</a>
+        </div>
+      </div>
+      <div class="animate-on-scroll" style="transition-delay: 0.1s;">
+        <div class="hero-image-container">
+          <img src="assets/hvac-replacement.jpg" alt="Homeowner discussing high-efficiency central air conditioner replacement options with a technician">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+  <!-- Interactive Calculator Section -->
+  <section class="section section-alt" id="calculator" aria-label="Price Estimator Calculator">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;" class="animate-on-scroll">
+        <span class="badge badge-primary">Price Calculator</span>
+        <h2 style="margin-top: var(--space-xs);">HVAC installation cost estimator.</h2>
+        <p style="margin-top: var(--space-xs); max-width: 600px; margin-left: auto; margin-right: auto;">Customize your system parameters to get a real-world estimate of your equipment, labor, tax credits, and local utility rebates.</p>
+      </div>
+
+      <div class="grid-2 animate-on-scroll">
+        <!-- Input controls -->
+        <div class="calculator-card">
+          <!-- Step 1: Home Size -->
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>1. Home Size (Square Feet)</span>
+              <span style="color: var(--primary); font-weight: 700;"><span id="size-value">2,000</span> sq ft</span>
+            </div>
+            <input type="range" id="calc-home-size" min="1000" max="4000" step="100" value="2000" class="calc-range" aria-label="Home size in square feet">
+          </div>
+
+          <!-- Step 2: System Type -->
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>2. System Type</span>
+            </div>
+            <div class="calc-grid">
+              <div class="calc-option active" data-type="heat-pump" role="button" tabindex="0">
+                <h3>Heat Pump</h3>
+                <span>All-in-One system</span>
+              </div>
+              <div class="calc-option" data-type="split-system" role="button" tabindex="0">
+                <h3>Furnace & AC</h3>
+                <span>Traditional split</span>
+              </div>
+              <div class="calc-option" data-type="ac-only" role="button" tabindex="0">
+                <h3>AC Only</h3>
+                <span>Cooling unit only</span>
+              </div>
+              <div class="calc-option" data-type="mini-split" role="button" tabindex="0">
+                <h3>Ductless Mini</h3>
+                <span>Zone comfort</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Efficiency Level -->
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>3. Efficiency Tier</span>
+            </div>
+            <div class="calc-grid">
+              <div class="calc-option active" data-efficiency="standard" role="button" tabindex="0">
+                <h3>Standard</h3>
+                <span>14.3 SEER2</span>
+              </div>
+              <div class="calc-option" data-efficiency="high" role="button" tabindex="0">
+                <h3>High</h3>
+                <span>16.0 SEER2</span>
+              </div>
+              <div class="calc-option" data-efficiency="premium" role="button" tabindex="0">
+                <h3>Premium</h3>
+                <span>18.0+ SEER2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Optional Add-ons -->
+          <div class="calc-group">
+            <div class="calc-label">
+              <span>4. System Add-ons</span>
+            </div>
+            <div class="calc-checkboxes">
+              <label>
+                <input type="checkbox" data-addon="air-purifier">
+                <span>Whole-Home Air Purifier (+$950)</span>
+              </label>
+              <label>
+                <input type="checkbox" data-addon="smart-thermostat">
+                <span>Smart Thermostat Integration (+$350)</span>
+              </label>
+              <label>
+                <input type="checkbox" data-addon="duct-sealing">
+                <span>Aeroseal Duct Sealing (+$1,200)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Output details -->
+        <div class="calculator-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="margin-bottom: var(--space-md);">Estimated Pricing Breakdown</h3>
+            <p style="font-size: 0.875rem; color: var(--muted); margin-bottom: var(--space-lg);">This breakdown includes premium equipment, professional installation labor, code compliance checks, and standard system warranties.</p>
+            
+            <div class="calc-results">
+              <div class="calc-result-row">
+                <span>Equipment & Labor</span>
+                <strong id="res-equip">$0</strong>
+              </div>
+              <div class="calc-result-row">
+                <span>Selected Add-ons</span>
+                <strong id="res-addons">$0</strong>
+              </div>
+              <div class="calc-result-row" style="color: var(--success);">
+                <span>Federal Tax Credit (IRA 25C)</span>
+                <strong id="res-tax">$0</strong>
+              </div>
+              <div class="calc-result-row" style="color: var(--success);">
+                <span>Local Utility Rebates</span>
+                <strong id="res-rebates">$0</strong>
+              </div>
+              <div class="calc-result-row total">
+                <span>Total Project Estimate</span>
+                <strong id="res-total" style="color: var(--primary);">$0</strong>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-xl); text-align: center;">
+            <a href="mailto:info@parkersonsheatingandair.com" class="btn btn-primary" style="width: 100%;">Schedule Installation Consultation</a>
+            <p style="font-size: 0.75rem; color: var(--muted); margin-top: var(--space-sm); margin-bottom: 0;">Estimates are subject to site survey. Financing plans available.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evaluation Section (When to Replace & Tax Credits) -->
+  <section class="section" id="evaluation" aria-label="System Upgrade Evaluation">
+    <div class="container grid-2" style="gap: var(--space-xxl);">
+      <div class="animate-on-scroll">
+        <span class="badge badge-accent">Evaluation Guide</span>
+        <h2 style="margin: var(--space-xs) 0 var(--space-md);">When is it time to replace?</h2>
+        <p>Knowing when to repair versus replace can be challenging. While some issues can be fixed, older or inefficient systems often cost more in repairs and monthly energy bills than they are worth.</p>
+        
+        <h3 style="font-size: 1.15rem; margin-top: var(--space-md); margin-bottom: var(--space-xs);">Common Signs You May Need a Replacement:</h3>
+        <ul style="padding-left: var(--space-md); line-height: 1.8; font-size: 0.95rem;">
+          <li>System is 10-15+ years old</li>
+          <li>Frequent and costly repair visits</li>
+          <li>Rising energy bills without increased usage</li>
+          <li>Uneven temperatures throughout your space</li>
+          <li>Poor airflow or inconsistent performance</li>
+          <li>Loud or unusual system noises</li>
+          <li>System uses outdated or phased-out refrigerant</li>
+          <li>Excess humidity or poor indoor air quality</li>
+        </ul>
+      </div>
+
+      <div class="animate-on-scroll" style="transition-delay: 0.1s;">
+        <div class="card card-dark" style="padding: 40px; border-radius: var(--rounded-lg);">
+          <h3 style="margin-bottom: var(--space-sm); color: #fff;">Financial Incentives &amp; Credits</h3>
+          <p style="color: var(--on-dark-soft); font-size: 0.9rem; margin-bottom: var(--space-lg);">To qualify for Energy Efficient Home Improvement Credits under Section 25C, replacement systems must meet Consortium for Energy Efficiency (CEE) standards.</p>
+          
+          <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem; text-align: left;">
+            <thead>
+              <tr style="border-bottom: 1px solid var(--surface-dark-elevated); color: var(--on-dark);">
+                <th style="padding: 8px 0;">System</th>
+                <th style="padding: 8px 0;">Min SEER2</th>
+                <th style="padding: 8px 0;">Max Credit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px 0;">Heat Pump Upgrade</td>
+                <td style="padding: 12px 0;">16.0 SEER2</td>
+                <td style="padding: 12px 0; color: var(--accent); font-weight: 600;">$2,000</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px 0;">Air Conditioner</td>
+                <td style="padding: 12px 0;">16.0 SEER2</td>
+                <td style="padding: 12px 0; color: var(--accent); font-weight: 600;">$600</td>
+              </tr>
+              <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <td style="padding: 12px 0;">Gas Furnace</td>
+                <td style="padding: 12px 0;">97% AFUE</td>
+                <td style="padding: 12px 0; color: var(--accent); font-weight: 600;">$600</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Replacement Process Section -->
+  <section class="section section-alt" id="process" aria-label="Our HVAC Replacement Process">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;" class="animate-on-scroll">
+        <span class="badge badge-primary">How We Work</span>
+        <h2 style="margin-top: var(--space-xs);">Our HVAC replacement process.</h2>
+        <p style="margin-top: var(--space-xs); max-width: 600px; margin-left: auto; margin-right: auto;">We make upgrading your system simple and stress-free from start to finish.</p>
+      </div>
+
+      <div class="grid-5 animate-on-scroll">
+        <article class="card card-white" style="padding: 24px; text-align: center;">
+          <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">1</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">System Evaluation</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5;">We assess your current system, energy usage, and comfort needs.</p>
+        </article>
+        
+        <article class="card card-white" style="padding: 24px; text-align: center; transition-delay: 0.1s;">
+          <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">2</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Recommendations</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5;">Our technicians help select the right system size for optimal performance.</p>
+        </article>
+
+        <article class="card card-white" style="padding: 24px; text-align: center; transition-delay: 0.2s;">
+          <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">3</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Safe Removal</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5;">We carefully remove and dispose of your existing unit.</p>
+        </article>
+
+        <article class="card card-white" style="padding: 24px; text-align: center; transition-delay: 0.3s;">
+          <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">4</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Expert Installation</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5;">Your new system is installed with precision for maximum reliability.</p>
+        </article>
+
+        <article class="card card-white" style="padding: 24px; text-align: center; transition-delay: 0.4s;">
+          <div style="font-size: 2rem; font-weight: 700; color: var(--primary); margin-bottom: 12px;">5</div>
+          <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Final Testing</h3>
+          <p style="font-size: 0.85rem; line-height: 1.5;">We test the system thoroughly and review operations with you.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section" id="benefits" aria-label="Benefits of a New System">
+    <div class="container grid-2" style="align-items: center; gap: var(--space-xxl);">
+      <div class="animate-on-scroll" style="transition-delay: 0.15s;">
+        <div class="hero-image-container">
+          <img src="assets/hvac-replacement-service.jpg" alt="Modern clean outdoor air conditioner condenser unit after professional replacement installation" style="border-radius: var(--rounded-lg); width: 100%; height: auto;">
+        </div>
+      </div>
+      <div class="animate-on-scroll">
+        <span class="badge badge-accent">Why Upgrade?</span>
+        <h2 style="margin: var(--space-xs) 0 var(--space-md);">Benefits of a new HVAC system.</h2>
+        <p>Upgrading your HVAC system is an investment in comfort, efficiency, and peace of mind. Modern central heating and air systems bring several key improvements:</p>
+        
+        <div style="margin-top: var(--space-lg); display: grid; gap: var(--space-md);">
+          <div>
+            <h3 style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">Improved Energy Efficiency</h3>
+            <p style="font-size: 0.875rem; margin-top: 4px;">Modern systems are designed to use less energy while delivering better performance, helping reduce utility costs.</p>
+          </div>
+          <div>
+            <h3 style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">Enhanced Comfort Control</h3>
+            <p style="font-size: 0.875rem; margin-top: 4px;">New units provide more consistent temperatures, better humidity control, and improved airflow throughout your space.</p>
+          </div>
+          <div>
+            <h3 style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">Fewer Repairs &amp; Quiet Operation</h3>
+            <p style="font-size: 0.875rem; margin-top: 4px;">A new system reduces the stress of ongoing breakdowns, and today's engineering makes units run far more quietly.</p>
+          </div>
+          <div>
+            <h3 style="font-size: 1.05rem; font-weight: 600; color: var(--primary);">Better Indoor Air Quality</h3>
+            <p style="font-size: 0.875rem; margin-top: 4px;">Advanced filtration and airflow technology help reduce dust, allergens, and airborne particles.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="section section-alt" aria-label="Customer Reviews">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 56px;" class="animate-on-scroll">
+        <span class="badge badge-primary">Testimonials</span>
+        <h2 style="margin-top: var(--space-xs);">What your neighbors say.</h2>
+      </div>
+
+      <div class="reviews-widget-container animate-on-scroll" style="transition-delay: 0.1s;" data-lazy-widget>
+        <div class="reviews-skeleton">
+          <div class="skeleton-header">
+            <div class="skeleton-avatar"></div>
+            <div class="skeleton-text-group">
+              <div class="skeleton-line short"></div>
+              <div class="skeleton-line medium"></div>
+            </div>
+          </div>
+          <div class="skeleton-body">
+            <div class="skeleton-line long"></div>
+            <div class="skeleton-line long"></div>
+            <div class="skeleton-line medium"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-info">
+          <a href="index.html?v=3" class="logo" aria-label="Parkersons Heating and Air Home">
+            <img src="assets/logo.svg" alt="Parkerson's Heating & Air Logo" style="height: 48px; display: block; border-radius: 4px;">
+          </a>
+          <p>Engineered comfort, clear pricing, and reliable heating, cooling, and ductwork services in your local area.</p>
+        </div>
+        <div class="footer-col">
+          <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: var(--space-md); color: #fff;">Services</h3>
+          <ul class="footer-links">
+            <li><a href="repairs.html?v=3">HVAC Repairs</a></li>
+            <li><a href="repairs.html?v=3#ductwork">Duct Work</a></li>
+            <li><a href="replacement.html?v=3">HVAC Replacement</a></li>
+            <li><a href="maintenance.html?v=3">Maintenance Plans</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: var(--space-md); color: #fff;">Company</h3>
+          <ul class="footer-links">
+            <li><a href="team.html?v=3">Our Team</a></li>
+            <li><a href="blog.html?v=3">Blog</a></li>
+            <li><a href="faq.html?v=3">FAQ</a></li>
+            <li><a href="service-areas.html?v=3">Service Areas</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 style="font-size: 1.125rem; font-weight: 600; margin-bottom: var(--space-md); color: #fff;">Contact Us</h3>
+          <ul class="contact-list">
+            <li><span>📞</span> (813) 359-3020</li>
+            <li><span>✉️</span> info@parkersonsheatingandair.com</li>
+            <li><span>📍</span> Serving Brandon, Lithia, Riverview, FL &amp; Surrounding Areas</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Parkersons Heating and Air. All rights reserved.</p>
+        <p>Licensed &amp; Insured #HVAC-98765-A</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>

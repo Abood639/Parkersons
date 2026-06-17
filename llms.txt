@@ -1,0 +1,19 @@
+# Parkersons Heating and Air
+> High-efficiency residential heating, air conditioning, and ductwork services. Upfront flat-rate diagnostics, certified experts, and transparent pricing in Austin, TX.
+
+## Core Pages
+- [Home](https://parkersonshvac.com/): Primary landing page highlighting core HVAC repair, replacement, and seasonal maintenance plan offerings.
+- [HVAC Repairs & Duct Work](https://parkersonshvac.com/repairs.html): AC and heating diagnostic and repair details, plus duct sealing (Aeroseal) and sanitization service descriptions and online scheduling.
+- [HVAC Replacement & Upgrade Cost Estimator](https://parkersonshvac.com/replacement.html): Interactive cost estimator based on home size, system type, efficiency SEER, and add-ons, incorporating IRA Section 25C tax credits and utility rebates.
+- [Maintenance Membership Plans](https://parkersonshvac.com/maintenance.html): Bronze, Silver, and Gold preventative care plans with pricing and member benefits (seasonal tune-ups, parts discounts, and priority dispatch).
+- [Meet Our Team](https://parkersonshvac.com/team.html): Profiles of our background-checked, NATE-certified specialist technicians and state license certifications.
+- [HVAC Blog & Guides](https://parkersonshvac.com/blog.html): Informative articles covering federal tax credits, AC upgrade signs, air duct hygiene, heat pumps, and maintenance checklists.
+- [Frequently Asked Questions](https://parkersonshvac.com/faq.html): Direct answers regarding SEER ratings, air filter intervals, financing, tax credits, and AC troubleshooting.
+
+## Key Brand Facts
+- Phone: (555) 234-5678 (Toll-Free Support available)
+- Address: 100 Main St, Suite A, Austin, TX 78701
+- Email: support@parkersonshvac.com
+- State HVAC License: #HVAC-98765-A
+- Emergency service, licensed, bonded, and fully insured.
+- Partnered with local utilities for instant rebate coordination.
