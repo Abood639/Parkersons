@@ -280,6 +280,7 @@ a {
     padding: var(--space-lg) 0;
     gap: var(--space-md);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    order: 4;
   }
   
   .nav-links.active {
@@ -288,10 +289,37 @@ a {
   
   .menu-toggle {
     display: block;
+    order: 3;
   }
-  
+
+  .logo {
+    order: 1;
+  }
+
   .nav-cta {
-    margin-right: var(--space-lg);
+    order: 2;
+    margin-right: 0;
+  }
+
+  .nav-cta .btn-primary {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-nav {
+    height: 64px;
+  }
+  .top-nav .nav-container {
+    padding: 0 var(--space-md);
+  }
+  .nav-links {
+    top: 64px;
+  }
+  .nav-cta .btn-secondary {
+    height: 36px;
+    padding: 0 var(--space-sm);
+    font-size: 0.8rem;
   }
 }
 
