@@ -12,6 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 1b. Navigation Scroll Animation (Shrink Header)
+  const topNav = document.querySelector('.top-nav');
+  if (topNav) {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        topNav.classList.add('scrolled');
+      } else {
+        topNav.classList.remove('scrolled');
+      }
+    };
+    handleScroll(); // Run immediately in case page is already scrolled
+    window.addEventListener('scroll', handleScroll);
+  }
+
   // 2. Scroll Animation Observer
   const animateElements = document.querySelectorAll('.animate-on-scroll');
   if (animateElements.length > 0) {
